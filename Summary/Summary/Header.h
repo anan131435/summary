@@ -28,6 +28,12 @@
  dispatch_sync 不具备开启多线程的能力
  dispatch_asyn 会开启多线程
  代码执行完了 任务还在外面飘着要用信号量去强化
+ 
+ frame 是虚拟属性  anchorPoint是对于layer来说的，position是对于父视图来说的，anchorPoint 跟 position是同一个点
+ layer 是View的一个属性，具有树状的层级结构，能展示具体的内容图片文字 背景色 bounds position opcatiy属性，动画的实现就是作用在layer上面的
+ view是对layer的一个封装，可以响应事件
+ layer.mask  不规则图形
+ 
  */
 
 #endif /* Header_h */

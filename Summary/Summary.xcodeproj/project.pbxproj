@@ -16,6 +16,10 @@
 		73BC931322EC26A300B22408 /* SignalLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC931222EC26A300B22408 /* SignalLock.m */; };
 		73BC931722EC2B9A00B22408 /* C_conditionLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC931622EC2B9A00B22408 /* C_conditionLock.m */; };
 		73BC931A22EC2C0F00B22408 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC931922EC2C0F00B22408 /* Test.m */; };
+		73BC931E22EC4AAE00B22408 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC931D22EC4AAE00B22408 /* YYMemoryCache.m */; };
+		73BC932122EC4B5200B22408 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC932022EC4B5200B22408 /* YYDiskCache.m */; };
+		73BC937922F3CAEE00B22408 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC937822F3CAEE00B22408 /* Person.m */; };
+		73BC937C22F3CEA600B22408 /* Person+Height.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC937B22F3CEA600B22408 /* Person+Height.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,14 @@
 		73BC931622EC2B9A00B22408 /* C_conditionLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C_conditionLock.m; sourceTree = "<group>"; };
 		73BC931822EC2C0F00B22408 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		73BC931922EC2C0F00B22408 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		73BC931C22EC4AAE00B22408 /* YYMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		73BC931D22EC4AAE00B22408 /* YYMemoryCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		73BC931F22EC4B5200B22408 /* YYDiskCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		73BC932022EC4B5200B22408 /* YYDiskCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		73BC937722F3CAEE00B22408 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		73BC937822F3CAEE00B22408 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		73BC937A22F3CEA600B22408 /* Person+Height.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Height.h"; sourceTree = "<group>"; };
+		73BC937B22F3CEA600B22408 /* Person+Height.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Height.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,8 @@
 		73BC92F922EC267000B22408 /* Summary */ = {
 			isa = PBXGroup;
 			children = (
+				73BC937622F3CAD700B22408 /* category */,
+				73BC931B22EC34E500B22408 /* Cache */,
 				73BC931022EC269000B22408 /* Lock */,
 				73BC92FA22EC267000B22408 /* AppDelegate.h */,
 				73BC92FB22EC267000B22408 /* AppDelegate.m */,
@@ -94,6 +108,28 @@
 				73BC931922EC2C0F00B22408 /* Test.m */,
 			);
 			path = Lock;
+			sourceTree = "<group>";
+		};
+		73BC931B22EC34E500B22408 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				73BC931C22EC4AAE00B22408 /* YYMemoryCache.h */,
+				73BC931D22EC4AAE00B22408 /* YYMemoryCache.m */,
+				73BC931F22EC4B5200B22408 /* YYDiskCache.h */,
+				73BC932022EC4B5200B22408 /* YYDiskCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		73BC937622F3CAD700B22408 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				73BC937722F3CAEE00B22408 /* Person.h */,
+				73BC937822F3CAEE00B22408 /* Person.m */,
+				73BC937A22F3CEA600B22408 /* Person+Height.h */,
+				73BC937B22F3CEA600B22408 /* Person+Height.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +203,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BC92FF22EC267000B22408 /* ViewController.m in Sources */,
+				73BC932122EC4B5200B22408 /* YYDiskCache.m in Sources */,
 				73BC930A22EC267100B22408 /* main.m in Sources */,
 				73BC931322EC26A300B22408 /* SignalLock.m in Sources */,
 				73BC931A22EC2C0F00B22408 /* Test.m in Sources */,
+				73BC937C22F3CEA600B22408 /* Person+Height.m in Sources */,
 				73BC931722EC2B9A00B22408 /* C_conditionLock.m in Sources */,
+				73BC937922F3CAEE00B22408 /* Person.m in Sources */,
+				73BC931E22EC4AAE00B22408 /* YYMemoryCache.m in Sources */,
 				73BC92FC22EC267000B22408 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
